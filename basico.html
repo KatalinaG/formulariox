@@ -8,95 +8,99 @@
     <link rel="stylesheet" href="css/estilo.css">
 </head>
 <script>
-    //funcion para un mendaje emergente
-    function enviar(){ 
-
+    //funcion para un mensaje emergente
+    function enviar(){
+        alert("Sus datos fueron enviado")
     }
 </script>
 <body>
+    <!--encabezado-->
     <header>
-        <h1>¿Qué son los formularios?</h1>
+        <h1>¿Que son los formularios?</h1>
     </header>
-    <div class="contenido">
-        <form action="form-basico" action="active"></form>
-        <div class="formulario" >
-            <div class="titulo-formulario">
-                <h1> input básicos </h1>
-            </div>
-            <div class="entrada">
-                <label>Entrada tipo texto</label>
-                <input type="text" placeholder="Nombre Completo">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo email</label>
-                <input type="email" placeholder="Ejemplo1234@gmail.com">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo menu desplegable</label>
-                <select>
-                    <option value="">ninguna</option>
-                    <option value="">Opcion 1</option>
-                    <option value="">Opcion 2</option>
-                    <option value="">Opcion 3</option>
-                </select>
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo fecha</label>
-                <input type="date">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo password</label>
-                <input type="password" placeholder="Ejemplo1234*">
-            </div>
-            <div class="entrada">
-                <label> Entrada tipo caja de verificacion circular</label>
-                <div class="opciones">
-                    <div>
-                        <label>
-                            <input type="radio" name="radio">
-                            <span> Opcion 1 </span>
-                        </label>
-                    </div>
-                    <div class="opciones">
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span> Opcion 2 </span>
-                            </label>
-                    </div>
-                    <div class="opciones">
-                        <div>
-                            <label>
-                                <input type="radio" name="radio">
-                                <span> Opcion 3 </span>
-                            </label>
-                    </div>
-                </div>
-            </div>
-            <div class="entrada">
-                <label>
-                    Entrada tipo area grande de texto (300+ caracteres)
-                </label>
-                <textarea name=" textarea"></textarea>
-            </div>
-            <div class="entrada">
-                <label>
-                    Entrada tipo caja de verificacion
-                </label>
-                <input type="checkbox" value="enviar" onclick="enviar()">
-                <label> Acepto terminos</label>
-            </div>
-            <div class="button">
-                <input type="button" value="Enviar" onclick="enviar()">
-            </div>
+       <!--contenedor del contenido-->
+       <div class="contenido">
+        <form class="form-basico" action="#">
+         <div class="titulo">
+             <h2>Entradas Básicos</h2>
+         </div>
+         <div class="entrada">
+             <label>Entrada tipo texto</label>
+             <input type="text" placeholder="Nombre Completo">
+         </div>
+         <div class="entrada">
+             <label>Entrada tipo email</label>
+             <input type="email" placeholder="Ejemplo@email.com">
+         </div>
+         <div class="entrada">
+            <label>Entrada tipo fecha</label>
+            <input type="date">
         </div>
-    </div>
+         <div class="entrada">
+             <label>Entrada tipo menu deplegable</label>
+             <select name="select">
+         <option>opcion 1</option>
+         <option>opcion 2</option>
+         <option>opcion 3</option>
+             </select>
+         </div>
+         <div class="entrada">
+             <label>Entrada tipo password</label>
+             <input type="password" placeholder="Ejemplo1234*">
+         </div>
+        
+        
+         <div class="entrada">
+             <label>Entrada tipo caja de verificacion circular</label>
+             <div class="opciones">
+                 <div>
+                     <label>
+                        <input type="radio" name="radio">
+                             <span>Opcion 1</span>
+                    </label>
+                 </div>
+ 
+                 <div>
+                     <label>
+                             <input type="radio" name="radio">
+                             <span>Opcion 2</span>
+                         </label>
+                 </div>
+ 
+                 <div>
+                     <label>
+                             <input type="radio" name="radio">
+                             <span>Opcion 3</span>
+                         </label>
+                 </div>
+             </div>
+         </div>
+
+         <div class="entrada">
+             <label>Entrada tipo area grande de texto (300++ catacteres)</label>
+             <textarea name="textarea"></textarea>
+         </div>
+
+         <div class="entrada">
+            <label>Entrada tipo caja de verificacion</label>
+            <input type="checkbox"><label >Acepto terminos</label>
+        </div>
+
+         <div class="boton">
+         <input type="button" value="Enviar" onclick="enviar()">
+         </div>
+
+        </form>
+     </div>
+    
+    <!--contenedor del menu de navegacion-->
     <div class="menu">
         <ul>
-            <li><a href="basico.html" class="activa">Básico</a></li>
+            <li><a href="datos.html" class="activo">Inicio</a></li>
+            <li><a href="basico.html" class="activo">Basico</a></li>
             <li><a href="registro.html">Registro</a></li>
             <li><a href="acceso.html">Iniciar Sesion</a></li>
-            <li><a href="validacion.html">Validación</a></li>
+            <li><a href="validacion.html">Validacion</a></li>
             <li><a href="busqueda.html">Busqueda</a></li>
         </ul>
     </div>
