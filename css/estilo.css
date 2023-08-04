@@ -179,7 +179,6 @@ ul li{
     font-family:'Mulish', sans-serif;
     font-size: 20px;
 }
-
 /*      Diseño responsivo      */
 
 @media (max-width: 600px){
@@ -203,6 +202,114 @@ ul li{
         margin-top: 0;
     }
     .form-basico button{
+        margin: 0;
+    }
+}
+/*--Estilo Validacion--*/
+.form-validacion{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 1 px 3 px 0 black (0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+.entrada{
+    text-align: left;
+    margin-bottom: 22px;
+}
+.titulo{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(61, 86, 92);
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid rgb(99, 184, 199);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.form-validacion .entrada label{
+    display: inline-block;
+    box-sizing: border-box;
+    color: rgb(94, 105, 105);
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+.form-valicacion input[type=text],
+.form-valicacion input[type=email],
+.form-valicacion input[type=password]{
+    color: rgb(195, 253, 253);
+    width: 240px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.form-valicacion input[type=radio],
+.form-valicacion input[type=checkbox]
+{
+    box-shadow: none;
+    width: auto;
+}
+.form-valicacion input[type=checkbox]
+{
+    margin-top: 13px;
+}
+.opciones{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div{
+    margin-top: 10px;
+}
+.opciones label span{
+    margin-left: 8px;
+    color: rgb(54, 65, 61);
+    font-weight: normal;
+}
+.opciones input{
+    width: auto;
+}
+.form-validacion input[type=button]{
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(32, 168, 168);
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 black;
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*      Diseño responsivo      */
+
+@media (max-width: 600px){
+    .form-valicacion{
+        padding: 30px;
+        max-width: 480px;
+    }
+    .form-valicacion .titulo{
+        margin-bottom: 50px;
+    }
+    .form-validacion .entrada>label span{
+        display: block;
+        text-align: left;
+        padding: 0 0 15px;
+    }
+    .form-validacion input
+    [type=checkbox]{
+        margin-top: 0;
+    }
+    .form-valicacion button{
         margin: 0;
     }
 }
