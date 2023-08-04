@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(223, 241, 241);
+}
+header{
+    box-sizing: border-box;
+    background-color: rgb(101, 185, 185);
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    height: 80px;
+    padding: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contenido{
+    display: flex;
+    margin: 90px;
+    text-align: justify;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+img{
+    width: 400px;
+    padding-left: 20px;
+
+}
+.menu{
+    list-style: none;
+    width: 100%;
+    height: 90px;
+    text-align: center;
+}
+ul a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background-color: rgb(84, 128, 131);
+    padding: 5px 13px;
+    border-radius: 3px;
+    opacity: 0.8;
+    font-size: 26px;
+    display: inline-block;
+    line-height: 1;
+    outline: none;
+}
+ul li a .active{
+    background-color: rgb(41, 44, 43);
+    pointer-events: none;
+}
+ul li a :hover{
+    opacity: 1;
+}
+ul li{
+    display: inline-block;
+}
+.menu ul :hover{
+    background-color: rgb(47, 73, 73);
+    color: bisque;
+    border-radius: 3px;
+}
+@media (max-width:1000px){
+    header h1{
+        float: none;
+    }
+    header a{
+        margin-top: 25px;
+        float: none;
+    }
+}
+/*--Estilo formulario basico--*/
+.form-basico{
+    max-width: 640px;
+    margin: 0 auto;
+    padding: 55px;
+    box-sizing: border-box;
+    background-color: white;
+    box-shadow: 0 1 px 3 px 0 black (0, 0, 0, 0.1);
+    font: bold 14px sans-serif;
+    text-align: center;
+}
+.entrada{
+    text-align: left;
+    margin-bottom: 22px;
+}
+.titulo{
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    color: blueviolet;
+    font-size: 24px;
+    padding: 0 10px 15px;
+    border-bottom: 2px solid rgb(67, 164, 230);
+    margin: 0;
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+.form-basico .entrada label{
+    display: inline-block;
+    box-sizing: border-box;
+    color: aquamarine;
+    width: 180px;
+    text-align: left;
+    vertical-align: top;
+    padding: 12px 25px;
+}
+.form-basico input[type=text],
+.form-basico input[type=email],
+.form-basico input[type=password]{
+    color: blueviolet;
+    width: 240px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.form-basico input[type=radio],
+.form-basico input[type=checkbox]
+{
+    box-shadow: none;
+    width: auto;
+}
+.form-basico input[type=checkbox]
+{
+    margin-top: 13px;
+}
+.form-basico select{
+    background-color: blueviolet;
+    color: blue;
+    box-sizing: border-box;
+    max-width: 240px;
+    width: 240px;
+    box-shadow: 1px 2px 4px 0 bisque;
+    padding: 12px 8px;
+    border: 1px solid wheat;
+}
+.form-basico textarea{
+    color: blue;
+    box-sizing: border-box;
+    width: 240px;
+    height: 100px;
+    box-shadow: 1px 2px 4px 0 bisque;
+    padding: 12px;
+    border: 1px solid wheat;
+    resize: vertical;
+}
+.opciones{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.opciones div{
+    margin-top: 10px;
+}
+.opciones label span{
+    margin-left: 8px;
+    color: rgb(54, 65, 61);
+    font-weight: normal;
+}
+.opciones input{
+    width: auto;
+}
+.form-basico input[type=button]{
+    display: block;
+    border-radius: 2px;
+    background-color: blue;
+    color: white;
+    font-weight: bold;
+    box-shadow: 1px 2px 4px 0 black;
+    padding: 14px 22px;
+    border: 0;
+    margin: 40px 183px 0;
+    font-family:'Mulish', sans-serif;
+    font-size: 20px;
+}
+
+/*      Diseño responsivo      */
+
+@media (max-width: 600px){
+    .form-basico{
+        padding: 30px;
+        max-width: 480px;
+    }
+}
+
