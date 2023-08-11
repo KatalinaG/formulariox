@@ -220,7 +220,7 @@ ul li{
     padding: 55px;
     box-sizing: border-box;
     color: #000000;
-    background-color: #c7e3e6;
+    background-color: #e1f6f8;
     font: bold 14px sans-serif;
     text-align: center;
 }
@@ -294,13 +294,13 @@ ul li{
     width: auto;
 }
 
-.form-validacion input[type=submit] {
+.form-validacion input[type=submit]{
     display: block;
     border-radius: 2px;
+    box-shadow: 1px 2px 4px 0 rgba(7, 7, 7, 0.08);
     background-color: rgb(115, 181, 185);
     color: #ffffff;
     font-weight: bold;
-    box-shadow: 1px 2px 4px 0 rgba(7, 7, 7, 0.08);
     padding: 14px 22px;
     border: 0;
     margin: 40px 183px 0;
