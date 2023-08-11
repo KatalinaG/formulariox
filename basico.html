@@ -7,46 +7,71 @@
     <link rel="icon" href="img/lobo.png" >
     <link rel="stylesheet" href="css/estilo.css">
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> >
+    
+</script>
 <script>
     //funcion para un mensaje emergente
     function enviar(){
         alert("Sus datos fueron enviado")
     }
+    
 </script>
 <body>
     <!--encabezado-->
     <header>
-        <h1>¿Que son los formularios?</h1>
+        <h1>¿Qué son los formularios?</h1>
     </header>
        <!--contenedor del contenido-->
        <div class="contenido">
         <form class="form-basico" action="#">
          <div class="titulo">
-             <h2>Entradas Básicos</h2>
+             <h2>Entradas Básicas</h2>
          </div>
          <div class="entrada">
              <label>Entrada tipo texto</label>
-             <input type="text" placeholder="Nombre Completo">
+             <input type="text"  class="campo"   placeholder="Katalina Vanegas" required>
+               
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>  
+                    </span>
+             
          </div>
          <div class="entrada">
              <label>Entrada tipo email</label>
-             <input type="email" placeholder="Ejemplo@email.com">
+             <input type="text"  class="campo"   placeholder="Ejemplo@gmail.com" required>
+               
+                    <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+                    </svg>  
+                    </span>
          </div>
          <div class="entrada">
             <label>Entrada tipo fecha</label>
-            <input type="date">
+            <input type="date"  class="campo"   placeholder="Ejemplo1234*" required>
+               
+             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+             </svg>  
+             </span>
         </div>
          <div class="entrada">
              <label>Entrada tipo menu deplegable</label>
              <select name="select">
-         <option>opcion 1</option>
-         <option>opcion 2</option>
-         <option>opcion 3</option>
+         <option>Opción 1</option>
+         <option>Opción 2</option>
+         <option>Opción 3</option>
              </select>
          </div>
          <div class="entrada">
              <label>Entrada tipo password</label>
-             <input type="password" placeholder="Ejemplo1234*">
+             <input type="text"  class="campo"   placeholder="Ejemplo1234*" required>
+               
+             <span class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-check-circle-fill" viewBox="0 0 16 16">
+             <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"/>
+             </svg>  
+             </span>
          </div>
         
         
@@ -56,28 +81,28 @@
                  <div>
                      <label>
                         <input type="radio" name="radio">
-                             <span>Opcion 1</span>
+                             <span>Opción 1</span>
                     </label>
                  </div>
  
                  <div>
                      <label>
                              <input type="radio" name="radio">
-                             <span>Opcion 2</span>
+                             <span>Opción 2</span>
                          </label>
                  </div>
  
                  <div>
                      <label>
                              <input type="radio" name="radio">
-                             <span>Opcion 3</span>
+                             <span>Opción 3</span>
                          </label>
                  </div>
              </div>
          </div>
 
          <div class="entrada">
-             <label>Entrada tipo area grande de texto (300++ catacteres)</label>
+             <label>Entrada tipo area grande de texto (300++ caracteres)</label>
              <textarea name="textarea"></textarea>
          </div>
 
